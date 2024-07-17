@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    font:
+        14px 'Lucida Grande',
+        Helvetica,
+        Arial,
+        sans-serif;
+    background-size: contain;
+    background: rgb(0, 255, 126);
+    background: linear-gradient(
+        48deg,
+        rgba(0, 255, 126, 1) 0%,
+        rgba(9, 9, 121, 1) 29%,
+        rgba(2, 0, 36, 1) 100%
+    );
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+.big-f {
+    font-size: 2rem;
+}
+
+.medium-f {
+    font-size: 1.75rem;
+}
+
+.small-f {
+    font-size: 1.5rem;
+}
+
+.main-color {
+    color: rgba(255, 255, 255, 0.911);
+}
+
+.sec-color {
+    color: rgba(194, 190, 190, 0.911);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.app-container {
+    padding: 50px;
+    height: 100vh;
+}
+
+.form-container {
+    height: fit-content;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.align-center {
+    align-self: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.form {
+    border: 1px solid rgb(100, 100, 100);
+    background-color: rgba(39, 37, 37, 0.733);
+    padding: 2rem 1.5rem;
+}
+
+.form h1 {
+    padding-bottom: 2rem;
+}
+
+.logo {
+    width: 20vw;
+    border: 1px solid rgb(100, 100, 100);
+    background-color: rgba(39, 37, 37, 0.733);
+    height: 90vh;
+    justify-self: center;
+    align-self: center;
+}
+
+.messages-container {
+    width: 80vw;
+    height: 90vh;
+    border: 1px solid rgb(100, 100, 100);
+
+    align-self: center;
+    background-color: rgba(39, 37, 37, 0.733);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.messages {
+    align-self: flex-start;
+}
+
+a {
+    color: #00b7ff;
+}

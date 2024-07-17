@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+    <body>
+        <div class="app-container flex">
+            <div class="form-container flex align-center">
+                <form class="form flex flex-col" method="POST" action="/new">
+                    <h1 class="main-color big-f"><%= title %></h1>
+                    <input
+                        type="text"
+                        name="pseudoText"
+                        placeholder="Your pseudo"
+                    />
+                    <input
+                        type="textarea"
+                        name="messageText"
+                        placeholder="Your sweet message here..."
+                    />
+                    <button type="submit">Send !</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

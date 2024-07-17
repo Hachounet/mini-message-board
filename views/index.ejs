@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="app-container flex">
+    <div class="logo flex flex-col" >
+      
+      <h1 class="align-center big-f main-color"><%= title %></h1>
+      <p class="medium-f align-center sec-color text-center">A small app to always be in touch with your friends.</p>
+    
+    
+    </div>
+    
+    <div class="messages-container flex flex-col">
+
+
+      <div class="messages">
+    
+      <% messages.forEach((message) => { %>
+        <div class="msg sec-color medium-f"><%= message.user %> : <%= message.text %> at <%= message.added%></div>
+      <% }) %>
+      </div>
+      
+      <div class="flex flex-end small-f"> <a href="/new" class="flex-end">Send message</a></div>
+     
+
+    </div>
+  </div>
+  </body>
+</html>
